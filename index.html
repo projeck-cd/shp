@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+        <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:skyblue;">
+        <a class="navbar-brand" href="#">淘宝</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">微淘</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               商品分类
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">女装</a>
+                <a class="dropdown-item" href="#">男装</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">更多</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./shoppingCart.html">购物车<span class="badge badge-danger" name="totalQty" id="cart">0</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">搜索</button>
+          </form>
+        </div>
+      </nav>
+</div>
+
+<div class="album py-5 bg-light" id="cart">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/2.jpg" data-holder-rendered="true">
+          <div class="card-body">
+            <p class="card-text">鸟巢</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-danger"  name='decrease'>-</button>
+                <button type="button" class="btn btn-sm btn-outline-danger display" name='qty'>0</button>
+                <button type="button" class="btn btn-sm btn-outline-danger" name='increase'>+</button>
+                <button type="button" class="btn btn-sm btn-outline-danger"  name='addToCart' data-id="01">加入购物车</button>
+              </div>
+              <small class="text-muted">￥99.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/2.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">鸟巢</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger"  name='decrease'>-</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger display" name='qty'>0</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger" name='increase'>+</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger"  name='addToCart' data-id="01">加入购物车</button>
+                </div>
+                <small class="text-muted">￥99.00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/2.jpg" data-holder-rendered="true">
+              <div class="card-body">
+                <p class="card-text">鸟巢</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-danger"  name='decrease'>-</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger display" name='qty'>0</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger" name='increase'>+</button>
+                    <button type="button" class="btn btn-sm btn-outline-danger"  name='addToCart' data-id="01">加入购物车</button>
+                  </div>
+                  <small class="text-muted">￥99.00</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./images/2.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">鸟巢</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-danger"  name='decrease'>-</button>
+                      <button type="button" class="btn btn-sm btn-outline-danger display" name='qty'>0</button>
+                      <button type="button" class="btn btn-sm btn-outline-danger" name='increase'>+</button>
+                      <button type="button" class="btn btn-sm btn-outline-danger"  name='addToCart' data-id="01">加入购物车</button>
+                    </div>
+                    <small class="text-muted">￥99.00</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </div>
+  </div>
+</div>
+<script>
+    var totalQty =document.getElementById('cart');
+    var totalQty=document.querySelector('.badge');
+    console.log(totalQty);
+
+    var increase=document.getElementsByName('increase')
+    console.log(increase);
+    for(let i=0;i<increase.length;i++){
+   increase[i].addEventListener('click',increaseValue);
+}
+
+    var decrease=document.getElementsByName('decrease');
+    console.log(decrease);
+    for(let i=0;i<decrease.length;i++){
+   decrease[i].addEventListener('click',decreaseValue);
+}
+
+    var add=document.getElementsByName('addToCart');
+    console.log(add);
+    for(let i=0;i<add.length;i++){
+   add[i].addEventListener('click',addToCart);
+}
+
+
+function increaseValue(e){
+      var qtyObj= e.target.previousElementSibling;  
+      var qty=parseInt(qtyObj.innerText);
+      qty++;
+      qtyObj.innerText=qty;
+      console.log(qty);        
+}
+function decreaseValue(e){
+    var qtyObj= e.target.nextElementSibling;
+    var qty=parseInt(qtyObj.innerText);
+   if(qty>1) qty--;
+   else qty=0;
+    qtyObj.innerText=qty;
+    console.log(qty);        
+}
+
+function addToCart(e){
+    var qtyObj=  e.target.previousElementSibling.previousElementSibling;
+    var qty=parseInt(qtyObj.innerText);
+    var total=parseInt(totalQty.innerText);
+    total+=qty;
+    totalQty.innerText=total;  
+}
+
+
+
+ </script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/cartJson.js"></script>
+
+</body>
+</html>
