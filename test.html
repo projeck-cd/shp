@@ -15,38 +15,25 @@
         var cart = new ShoppingCart();
         cart.clearCart();
         // 商品
-        var product = new Product('01', '鸟巢', '2.jpg', 10);
-
+        var product = new Product('01', '坦克', '3.jpg', 10);
         // 订单
         var order = new Order(product, 3, true);
-        //  购物车数据
-        // var cartdata = new Cartdata();
+      
 
-        // 将订单加入购物车
-        //   cartdata.orderList.push(order);
-        //   cartdata.totalQty=order.qty;
-        //   cartdata.totalAmount=order.qty*order.price;
-        //   cartdata.units = 1;
-
-        // console.log(cartdata);
-
-        // 创建购物车操作类对象        
-        // var cart = new ShoppingCart();
-        // 将购物车数据写入本地存储
-        // cart.setDataToLocalStorage(cartdata);
-        // 将购物车数据读出来显示到控制台
         cart.addToCart(order);
         // 又创建一个商品
-        // product = new Product('02', '键盘', '../image/KTV.png', 10);
+        product = new Product('02', '飞机', '4.jpg', 10);
         //    又创建一个订单
         order = new Order(product, 5, true);
         // 将新商品加入购物车（本地存储）
         cart.addToCart(order);
+        cart .changeQty(01, "2");
 
         console.log(cart.getDataFromLocalStorage());
         console.log(cart.getSelectedQty());
         console.log(cart.getSelectedAmount());
-        // cart.setItemSelectStatus('02', true);
+        // cart.setItemSelectStatus('01', true);
+        // console.log(cart.setItemSelectStatus());
         // cart.deleteItem('01');
 
     </script>

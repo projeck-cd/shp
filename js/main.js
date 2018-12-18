@@ -157,7 +157,7 @@ class ShoppingCart {
         if (order == null) {
             //   没有找到id
             console.log('订单ID有误');
-            return;
+          
         }
         else {
             //   找到对应id
@@ -166,6 +166,16 @@ class ShoppingCart {
         //   写入本地存储
         this.setDataToLocalStorage(cartdata);
     }
+      //查找制定的id在购物车数据列表中的位置
+  find(id, orderList) {
+    for (const i in orderList) {
+      if (id == orderList[i].id) {
+       console.log(orderList[i]);
+        return orderList[i];
+      }
+    }
+    return null;
+  }
 
     //     var cartdata = this.getDataFromLocalStorage();
     //     let orderList = cartdata.orderList;
@@ -263,11 +273,12 @@ class ShoppingCart {
       // 减少/增加指定商品的数量（+1或者-1）
       changeQty(id, op) {
         let cartData = this.getDataFromLocalStorage();
+        // console.log(cartData);
         let orderList = cartData.orderList;
         let order = this.find(id,orderList);
         // console.log(index);
         if (order == null) {
-            console.log('订单id有误');
+            // console.log('订单id有误');
             return;
         } else {
             if (op == '+') {
